@@ -7,6 +7,7 @@ import {
 	useCurrentFrame,
 	useVideoConfig,
 } from 'remotion';
+import VOICEOVER from './audio-timeline.json';
 import {Finale} from './scenes/Finale';
 import {Intro} from './scenes/Intro';
 import {Stats} from './scenes/Stats';
@@ -23,18 +24,6 @@ const SCENES = [
 ];
 
 export const REEL_DURATION = SCENES.reduce((a, s) => a + s.duration, 0);
-
-// Voiceover lines (Kokoro TTS, voice am_fenrir), placed on the frames they narrate
-const VOICEOVER = [
-	{file: '01-ladies', from: 8},
-	{file: '02-the', from: 76},
-	{file: '03-biggest', from: 90},
-	{file: '04-pop', from: 105},
-	{file: '05-star', from: 120},
-	{file: '06-numbers', from: 172},
-	{file: '07-tour', from: 278},
-	{file: '08-name', from: 372},
-];
 
 const WIPE = 18;
 const WIPE_COLORS = [C.yellow, C.pink, C.violet];
@@ -115,6 +104,7 @@ export const Reel: React.FC = () => {
 				}}
 			/>
 			<Grain />
+			<Html5Audio src={staticFile('music.wav')} />
 			{VOICEOVER.map(({file, from}) => (
 				<Sequence key={file} from={from} layout="none">
 					<Html5Audio src={staticFile(`voice/${file}.wav`)} />
