@@ -1,0 +1,22 @@
+{
+  "name": "guseynov-reel",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Guseyn Guseynov — biggest pop star. A 15-second motion graphics showreel built with Remotion.",
+  "scripts": {
+    "dev": "remotion studio",
+    "still": "remotion still GuseynovReel out/still.png --frame=120",
+    "render": "remotion render GuseynovReel out/guseynov-reel.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.522",
+    "@remotion/fonts": "^4.0.522",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.522"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.0",
+    "typescript": "5.8.3"
+  }
+}

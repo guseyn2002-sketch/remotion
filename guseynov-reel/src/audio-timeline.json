@@ -1,0 +1,34 @@
+[
+	{
+		"file": "01-ladies",
+		"from": 6
+	},
+	{
+		"file": "02-the",
+		"from": 76
+	},
+	{
+		"file": "03-biggest",
+		"from": 90
+	},
+	{
+		"file": "04-pop",
+		"from": 105
+	},
+	{
+		"file": "05-star",
+		"from": 120
+	},
+	{
+		"file": "06-numbers",
+		"from": 171
+	},
+	{
+		"file": "07-tour",
+		"from": 277
+	},
+	{
+		"file": "08-name",
+		"from": 372
+	}
+]
