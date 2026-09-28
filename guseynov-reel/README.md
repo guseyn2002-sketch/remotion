@@ -14,4 +14,6 @@ npm run render   # out/guseynov-reel.mp4
 In sandboxes where Remotion can't download Chrome, pass a local one:
 `npm run render -- --browser-executable=/path/to/headless_shell`
 
+Voiceover: `public/voice/*.wav`, generated with [Kokoro TTS](https://github.com/thewh1teagle/kokoro-onnx) (Apache-2.0), voice `am_fenrir`; timings are in `VOICEOVER` in `src/Reel.tsx`.
+
 Fonts (Anton, Inter — SIL OFL) are bundled in `public/fonts` so rendering works offline.
